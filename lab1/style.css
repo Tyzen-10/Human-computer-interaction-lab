@@ -1,0 +1,22 @@
+body{
+    background-image: url(https://wallpaperaccess.com/full/956710.jpg);
+}
+
+.align
+{
+    text-align: center;
+}
+
+.style{
+    text-decoration: solid;
+    color: white;
+    padding: 5 px;
+    text-align: center;
+    background-color: black;
+}
+.margin{
+    margin-left: 100px;
+}
+.color{
+    color: white;
+}
