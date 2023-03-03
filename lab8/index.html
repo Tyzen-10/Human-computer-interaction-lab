@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            align-items: center;
+            background-color: lightsalmon;
+        }
+        #div1 {
+            width: 350px;
+            height: 70px;
+            padding: 10px;
+            border: 1px solid black;
+            
+        }
+        h2{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: black;
+        }
+        img{
+            align-items: center; 
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+        </script>
+        </head>
+        <body>
+        <div id="chumma">
+        <h2><b>DRAG AND DROP</b></h2>
+        <br>
+        <img id="drag1" src="logo2.png" draggable="true" ondragstart="drag(event)" width="336" height="69">  
+        <br>
+        <br>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        
+</body>
+</html>

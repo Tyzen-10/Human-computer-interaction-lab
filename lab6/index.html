@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body {
+      text-align: center;
+      display: block;
+      background-color: lightcoral;
+    }
+    h1 {
+      text-align: center;
+    }
+    .btn {
+      align-items: center;
+      padding: 5px;
+      font-weight: 600;
+    }
+    img {
+      margin-bottom: 25px;
+    }
+  </style>
+  <body>
+    <h1>CHANGING THE IMAGE</h1>
+    <center>
+      <img
+        src="logo2.png"
+        alt="rec"
+        class="centre"
+        id="myImage"
+        width="200"
+        height="50"
+      />
+      <br />
+      <input type="button" onclick="changeImage()" class="btn" value="Change" />
+    </center>
+    <script>
+      function changeImage() {
+        var image = document.getElementById("myImage");
+        if (image.src.match("logo2.png")) {
+          image.src = "flower.jpeg";
+        } else {
+          image.src = "logo2.png";
+        }
+      }
+    </script>
+  </body>
+</html>

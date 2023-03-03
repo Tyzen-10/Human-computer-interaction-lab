@@ -1,0 +1,151 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: white;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: rgb(161, 213, 64);  
+}   
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus{  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+select{
+    padding: 15px;
+    margin: 5px 0px 22px;
+    width: 100%;
+}
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+  <center>  <h1> WELCOME TO REGISTRATION</h1> </center>  
+  <hr>  
+  <label> FIRST NAME: </label>   
+<input type="text" name="firstname" placeholder= "FIRST NAME:" size="15" required />   
+<label> SECOND NAME: </label>   
+<input type="text" name="secondname" placeholder="SECOND NAME:" size="15" required />   
+<label> FATHERS's NAME: </label>    
+<input type="text" name="fathername" placeholder="FATHER's NAME" size="15"required />   
+
+<div>  
+<label>   
+Gender :  
+</label><br>  
+<input type="checkbox" value="Male" name="gender" checked > Male   
+<input type="checkbox" value="Female" name="gender"> Female     
+</div>   
+<div>  
+    <label>   
+    DATE OF BIRTH :  
+    </label>   
+    <input type="date" id="DOB" name="date of birth"> 
+    </div>  
+<label>   
+<div>
+    <label> 
+        RELIGION:
+    </label> 
+    <select>  
+        <option value="Religion">Religion</option>  
+        <option value="HINDU">Hindu</option>  
+        <option value="CHRISTIAN">Christian</option>  
+        <option value="MUSLIM">Muslim</option>  
+        <option value="OTHERS">Others</option>    
+        </select>  
+</div>  
+<div> 
+    <label> 
+        CATEGORY:
+    </label> 
+    <select>  
+        <option value="Religion">SELECT</option>  
+        <option value="HINDU">OC</option>  
+        <option value="CHRISTIAN">BC</option>  
+        <option value="MUSLIM">MBC</option>  
+        <option value="OTHERS">SC/ST</option>    
+        </select>  
+</div> 
+Languages Known :  
+</label>  
+<select>  
+    <option value="TAMIL">TAMIL</option>  
+    <option value="ENGLISH">ENGLISH</option>  
+    <option value="TELUGU">TELUGU</option>  
+    <option value="MALAYALAM">MALAYALAM</option>    
+    </select>   
+<div>
+Mother tongue :  
+<select> 
+    <option value="TAMIL">TAMIL</option>  
+    <option value="ENGLISH">ENGLISH</option>  
+    <option value="TELUGU">TELUGU</option>  
+    <option value="MALAYALAM">MALAYALAM</option>
+</select>
+</div> 
+<br>
+  </style>
+  <body>  
+  <h2>EDUCATION DETAILS:</h2>  
+  <table style="width:100%">
+    <tr>
+      <th> </th>
+      <th>Institute/University</th>
+      <th>Marks Obtained</th>
+      <th>Year Of Passing</th>
+      <th>Grade %</th>
+    </tr>
+    <tr>
+      <td>i) X</td>
+      <th> <input type="text" > </th>
+      <th> <input type="text" > </th> 
+      <th> <input type="text" > </th>
+      <th> <input type="text" > </th>
+    </tr> 
+    <br>
+    <tr>
+      <td>ii) +2</td>
+      <th> <input type="text" > </th>
+      <th> <input type="text" > </th> 
+      <th> <input type="text" > </th>
+      <th> <input type="text" > </th>
+    </tr>
+  </table>
+    <button type="submit" class="registerbtn">Register</button>    
+</form>  
+</body>  
+</html>  
